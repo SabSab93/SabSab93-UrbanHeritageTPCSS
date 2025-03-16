@@ -1,0 +1,90 @@
+<!-- Header -->
+<header id="header-container"></header>
+
+<body class ="faq-page"> 
+    
+    <!-- Section FAQ -->
+    <div  class="container-fluid ">
+        <div class="row justify-content-center align-items-center border-bottom">
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-img-top d-flex justify-content-center align-items-center p-3">
+                        <i class="fa-solid fa-truck" style="color: #FA4C04; font-size: 4rem;"></i>
+                    </div>
+
+                    <div class="card-body">
+                    <h5 class="card-title">Livraison</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Suivre sa commande</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-img-top d-flex justify-content-center align-items-center p-3">
+                        <i class="fa-solid fa-shop" style="color: #FA4C04; font-size: 4rem;"></i>
+                    </div>
+
+                    <div class="card-body">
+                    <h5 class="card-title">Shop</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Nous retrouver</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-img-top d-flex justify-content-center align-items-center p-3">
+                        <i class="fa-solid fa-rotate-left" style="color: #FA4C04; font-size: 4rem;"></i>
+                    </div>
+
+                    <div class="card-body">
+                    <h5 class="card-title">Retour</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Les condtions de retour</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" >
+                    <div class="card-img-top d-flex justify-content-center align-items-center p-3">
+                        <i class="fa-solid fa-envelope" style="color: #FA4C04; font-size: 4rem;"></i>
+                    </div>
+
+                    <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+</body>
+<footer id="footer-container"></footer>
+

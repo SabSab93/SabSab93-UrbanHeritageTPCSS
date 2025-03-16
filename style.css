@@ -1,0 +1,151 @@
+/* Background spécifique pour la page index */
+body.index-page #header {
+    background: url("src/assets/hero.jpg") no-repeat center ;
+    background-size: cover;
+    min-height: 180vh;
+    border : 1px;
+}
+
+/* Fond orange pour le reste des pages */
+body:not(.index-page) #header {
+    background-color: #FA4C04; /* Fond orange */
+}
+.offer-text {
+    display: inline-block;
+    white-space: nowrap; 
+    animation: scroll-left 20s linear infinite;
+    font-size: 1.5rem; 
+}
+.img-container {
+position: relative;
+overflow: hidden;
+width: 100%; 
+}
+
+.img-hover {
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-container:hover .overlay {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(100%); /* Cache la div en dessous */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-top: 2px solid #000; /* Bordure en haut de l'overlay */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.contact-section {
+    margin-top: -1px; /* Enlever l'écart entre le background et la bordure */
+    padding-top: 20px; /* Ajouter un peu de padding au-dessus */
+    padding-bottom: 20px; /* Ajouter du padding en bas pour espacer le footer */
+}
+
+/* Réduction du padding et margin dans les sections si nécessaire */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Pour gérer la bordure sur la section de contact */
+.contact-section.border-top {
+    border-top: 1px solid #000;
+}
+
+.btn-orange {
+    background-color: #FA4C04 !important;
+    margin-bottom: 30px; 
+}
+
+
+.offer-text {
+    display: inline-block;
+    white-space: nowrap; 
+    animation: scroll-left 20s linear infinite;
+    font-size: 1.5rem; 
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.img-container {
+position: relative;
+overflow: hidden;
+width: 100%; 
+}
+
+.img-hover {
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-container:hover .overlay {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(100%); /* Cache la div en dessous */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-top: 2px solid #000; /* Bordure en haut de l'overlay */
+}
+
+.carousel-caption h3, .carousel-caption p {
+color: black;
+}
+.bg-custom-orange {
+    background-color: #FA4C04 !important;
+}
+
+.accordion-button {
+background-color: transparent; /* Fond transparent par défaut */
+border-color: transparent; /* Pas de bordure visible */
+}
+
+.accordion-button:focus {
+box-shadow: none; /* Supprime l'effet de surbrillance */
+border-color: transparent; /* Enlève la bordure bleue */
+background-color: #FA4C04 !important;
+}
+
+a {
+text-decoration: none; /* Enlève le soulignement des liens */
+}
+

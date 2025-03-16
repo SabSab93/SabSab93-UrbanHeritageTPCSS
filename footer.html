@@ -1,0 +1,113 @@
+<div  class="container-fluid ">
+    <div class="row align-items-center border-bottom border-top border-dark bg-custom-orange">
+        <div class="col-9"
+         text-dark fw-bold text-light text-start ps-4 d-flex align-items-center>
+            <h4>One-time opportunity. Rejoins le Club, deviens un Pancaker et profite de -10 % sur ta première commande. (+ early access + contenu exclusif + surprises et +++ encore)</h4>
+        </div>
+
+        <div class="col-2">
+            <input type="email" class="form-control me-2  w-150" placeholder="Entrez votre e-mail" id="emailInput">
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#emailModal">S'inscrire</button>
+        </div>
+
+        <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="emailModalLabel">Confirmation d'inscription</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Merci pour votre inscription ! Nous vous enverrons les dernières nouvelles et offres exclusives.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+
+
+<div class="container-fluid  py-4">
+    <div class="row">
+        <!-- Colonne 1 : Liens principaux -->
+        <div class="col-md-4 start">
+            <h5>Urban Heritage</h5>
+            <ul class="list-unstyled">
+                <li><a class="text-dark" href="index.html" >Accueil</a></li>
+                <li><a class="text-dark" href="index.html">Artistes</a></li>
+                <li><a class="text-dark" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 2 : Réseaux sociaux -->
+        <div class="col-md-4 center">
+            <h5>Suivez-nous</h5>
+            <ul class="list-unstyled">
+                <li><a class="text-dark" href="https://ads.tiktok.com" >TikTok</a></li>
+                <li><a class="text-dark" href="https://www.instagram.com/">Instagram</a></li>
+                <li><a class="text-dark" href="https://www.youtube.com/" >YouTube</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonne 3 : Infos supplémentaires -->
+        <div class="col-md-4 ">
+            <h5>Informations</h5>
+            <ul class="list-unstyled">
+                <li><a class="text-dark" href="faq.html">FAQ</a></li>
+                <li><a class="text-dark">Politique de confidentialité</a></li>
+                <li><a class="text-dark"  class="text-dark">A VOIIIR</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Copyright -->
+<div class="text-center mt-3 border-top border-dark">
+    <p>&copy; 2025 Urban Heritage. Tous droits réservés.</p>
+</div>
+<style>
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.carousel-caption h3, .carousel-caption p {
+color: black;
+}
+.bg-custom-orange {
+    background-color: #FA4C04 !important;
+}
+
+.accordion-button {
+background-color: transparent; /* Fond transparent par défaut */
+border-color: transparent; /* Pas de bordure visible */
+}
+
+.accordion-button:focus {
+box-shadow: none; /* Supprime l'effet de surbrillance */
+border-color: transparent; /* Enlève la bordure bleue */
+background-color: #FA4C04 !important;
+}
+
+a {
+text-decoration: none; /* Enlève le soulignement des liens */
+}
+</style>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+</script>
+
+
+
+

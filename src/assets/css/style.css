@@ -1,0 +1,21 @@
+/* Offer Bar */
+.offer-bar {
+  background-color: white;
+  border-bottom: 1px solid black;
+  overflow: hidden; /* Cache tout excédent de texte */
+}
+
+.offer-text {
+  display: inline-block;
+  white-space: nowrap; /* Evite que le texte soit coupé */
+  animation: scroll-left 30s linear infinite; /* Animation de défilement */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Le texte commence hors de l'écran à droite */
+  }
+  100% {
+    transform: translateX(-100%); /* Le texte se déplace complètement à gauche */
+  }
+}
